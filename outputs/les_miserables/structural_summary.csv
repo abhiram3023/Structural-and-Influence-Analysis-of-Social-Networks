@@ -1,0 +1,12 @@
+,value
+Nodes,77.0
+Edges,254.0
+Density,0.08680792891319207
+Average degree,6.597402597402597
+Connected components,1.0
+Giant component share,1.0
+Avg clustering coefficient,0.5731367499320135
+Transitivity,0.49893162393162394
+Degree assortativity,-0.16522513442237025
+Diameter (giant comp.),5.0
+Avg shortest path (giant comp.),2.6411483253588517

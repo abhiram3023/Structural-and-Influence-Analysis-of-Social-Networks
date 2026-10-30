@@ -1,0 +1,5 @@
+community,size,internal_edges,external_edges,internal_density,conductance,avg_clustering,hub
+0,5,5,5,0.5,0.3333333333333333,0.4333333333333333,Medici
+1,4,5,3,0.8333333333333334,0.23076923076923078,0.8333333333333333,Strozzi
+2,4,3,3,0.5,0.3333333333333333,0.0,Guadagni
+3,2,1,1,1.0,0.3333333333333333,0.0,Salviati

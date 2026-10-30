@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@theme {
+  /* card / input background; use bg-surface instead of bg-white so it follows the theme */
+  --color-surface: #ffffff;
+}
+
+/* Dark mode: Tailwind v4 utilities read colours from these variables, so remapping the palette themes every page.
+   The slate scale is inverted (light text, dark backgrounds) and light tints become deep tints. */
+.dark {
+  color-scheme: dark;
+  --color-surface: #0f172a;
+
+  --color-slate-50: #020617;
+  --color-slate-100: #1e293b;
+  --color-slate-200: #1e293b;
+  --color-slate-300: #334155;
+  --color-slate-400: #64748b;
+  --color-slate-500: #94a3b8;
+  --color-slate-600: #cbd5e1;
+  --color-slate-700: #e2e8f0;
+  --color-slate-800: #f1f5f9;
+  --color-slate-900: #f8fafc;
+
+  --color-blue-50: #172554;
+  --color-blue-100: #1e3a8a;
+  --color-blue-200: #1e40af;
+  --color-blue-600: #3b82f6;
+
+  --color-amber-50: #451a03;
+  --color-amber-100: #78350f;
+  --color-amber-200: #92400e;
+  --color-amber-700: #fcd34d;
+  --color-amber-800: #fde68a;
+
+  --color-red-50: #450a0a;
+  --color-red-200: #7f1d1d;
+  --color-red-600: #f87171;
+  --color-red-700: #fca5a5;
+
+  --color-green-50: #052e16;
+  --color-green-200: #166534;
+  --color-green-700: #86efac;
+  --color-green-800: #bbf7d0;
+  --color-green-900: #dcfce7;
+}
+
+body {
+  background: var(--color-slate-50);
+  color: var(--color-slate-900);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* chart text and gridlines follow the theme */
+.recharts-cartesian-axis-tick-value,
+.recharts-legend-item-text {
+  fill: var(--color-slate-500);
+}
+.recharts-cartesian-grid line {
+  stroke: var(--color-slate-200);
+}
+.dark .recharts-default-tooltip {
+  background: var(--color-surface) !important;
+  border-color: var(--color-slate-300) !important;
+}

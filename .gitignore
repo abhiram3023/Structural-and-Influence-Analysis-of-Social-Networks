@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pgdata/
+storage/
+data/facebook_combined.txt
+frontend/node_modules/
+frontend/.next/
+.env
+frontend/.next-*/
+.claude/
+.DS_Store
+.pytest_cache/
